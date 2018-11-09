@@ -1,0 +1,33 @@
+<!--
+  Ejercicio:
+  Mostrar una alerta cada vez que se haga clic sobre un párrafo
+-->
+
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>ejercicio 4</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+      <style>
+          .click{
+              cursor: pointer;
+          }
+      </style>
+  </head>
+  <body>
+    <p class="click"> clic !! </p>
+    <p class="click"> clic !! </p>
+    <p class="click"> clic !! </p>
+    <h3> no clic !! </h3>
+    <p class="clisk"> clic !! </p>
+    
+    
+    <script>
+    $(".click").on("click", function(){
+       alert("click en parrafo"); 
+    });  
+      
+    </script>
+  </body>
+</html>
